@@ -331,7 +331,7 @@ void pass_leave(Client *c)
 
 VbResult pass_keypress(Client *c, int key)
 {
-    if (key == CTRL('[')) { /* esc */
+    if (key == KEY_F5) {
         vb_enter(c, 'n');
     }
     c->state.processed_key = FALSE;
